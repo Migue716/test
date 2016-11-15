@@ -18,8 +18,53 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>601bfc64f698e5cffc4696db8735febd3b51e9ad</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict>
+					<key>consumerKey</key>
+					<string>eBJ8umO1buEF48RD6ccr6MEuv</string>
+					<key>consumerSecret</key>
+					<string>79uWX4VSbM97iGwcfJcYmUKrvfmxfX0rnMhEprKi4eixxA9W3O</string>
+				</dict>
+				<key>KitName</key>
+				<string>Twitter</string>
+			</dict>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Muves desea acceder a su ubicación</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Muves desea acceder a su ubicación</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Chivo-Black.otf</string>
+		<string>Chivo-BlackItalic.otf</string>
+		<string>Chivo-Bold.otf</string>
+		<string>Chivo-BoldItalic.otf</string>
+		<string>Chivo-Italic.otf</string>
+		<string>Chivo-Light.otf</string>
+		<string>Chivo-LightItalic.otf</string>
+		<string>Chivo-Regular.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

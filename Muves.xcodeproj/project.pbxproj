@@ -7,13 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		251A64A61DB91ECC0083427F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251A64A51DB91ECC0083427F /* Crashlytics.framework */; };
+		2554DBBC1DB7E645006C89B8 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2554DBBB1DB7E645006C89B8 /* SwiftyJSON.swift */; };
+		258CADD11DB83120000A4392 /* canarioGPS.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 258CADD01DB83120000A4392 /* canarioGPS.gpx */; };
+		258F50C01DAFFE9000236CBE /* DireccionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F50BF1DAFFE9000236CBE /* DireccionViewController.swift */; };
+		258F50C21DB035B700236CBE /* ReportarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F50C11DB035B700236CBE /* ReportarViewController.swift */; };
+		258F50C41DB039A000236CBE /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F50C31DB039A000236CBE /* CheckBox.swift */; };
+		259E30A31DDB7AC10091557A /* TwitterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259E30A21DDB7AC10091557A /* TwitterTableViewCell.swift */; };
+		259E30A61DDB8B3C0091557A /* AlertasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259E30A51DDB8B3C0091557A /* AlertasTableViewCell.swift */; };
+		25A174CA1DB9196D00E34A50 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A174C61DB9196D00E34A50 /* Fabric.framework */; };
+		25A174CB1DB9196D00E34A50 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A174C71DB9196D00E34A50 /* TwitterKit.framework */; };
+		25A174CC1DB9196D00E34A50 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 25A174C81DB9196D00E34A50 /* TwitterKitResources.bundle */; };
+		25A174CD1DB9196D00E34A50 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A174C91DB9196D00E34A50 /* TwitterCore.framework */; };
+		25AF1C781DB1AA79008E3D46 /* HorasYahooCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF1C771DB1AA79008E3D46 /* HorasYahooCollectionViewCell.swift */; };
+		25AF1C7A1DB1AA88008E3D46 /* DiasYahooCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF1C791DB1AA88008E3D46 /* DiasYahooCollectionViewCell.swift */; };
+		25C185F51DAEF12F002E94F7 /* Chivo-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25C185ED1DAEF109002E94F7 /* Chivo-Black.otf */; };
+		25C185F61DAEF12F002E94F7 /* Chivo-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25C185EE1DAEF109002E94F7 /* Chivo-BlackItalic.otf */; };
+		25C185F71DAEF12F002E94F7 /* Chivo-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25C185EF1DAEF109002E94F7 /* Chivo-Bold.otf */; };
+		25C185F81DAEF12F002E94F7 /* Chivo-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25C185F01DAEF109002E94F7 /* Chivo-BoldItalic.otf */; };
+		25C185F91DAEF12F002E94F7 /* Chivo-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25C185F11DAEF109002E94F7 /* Chivo-Italic.otf */; };
+		25C185FA1DAEF12F002E94F7 /* Chivo-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25C185F21DAEF109002E94F7 /* Chivo-Light.otf */; };
+		25C185FB1DAEF12F002E94F7 /* Chivo-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25C185F31DAEF109002E94F7 /* Chivo-LightItalic.otf */; };
+		25C185FC1DAEF12F002E94F7 /* Chivo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25C185F41DAEF109002E94F7 /* Chivo-Regular.ttf */; };
+		25C185FE1DAEF944002E94F7 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C185FD1DAEF944002E94F7 /* TwitterViewController.swift */; };
+		25C186001DAEF954002E94F7 /* AlertasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C185FF1DAEF954002E94F7 /* AlertasViewController.swift */; };
+		25C186021DAEF96C002E94F7 /* ConfiguracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C186011DAEF96C002E94F7 /* ConfiguracionViewController.swift */; };
 		25F4DF4B1DAE9A89004C5201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F4DF4A1DAE9A89004C5201 /* AppDelegate.swift */; };
-		25F4DF4D1DAE9A89004C5201 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F4DF4C1DAE9A89004C5201 /* ViewController.swift */; };
+		25F4DF4D1DAE9A89004C5201 /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F4DF4C1DAE9A89004C5201 /* MapaViewController.swift */; };
 		25F4DF501DAE9A89004C5201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F4DF4E1DAE9A89004C5201 /* Main.storyboard */; };
 		25F4DF521DAE9A89004C5201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25F4DF511DAE9A89004C5201 /* Assets.xcassets */; };
 		25F4DF551DAE9A89004C5201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F4DF531DAE9A89004C5201 /* LaunchScreen.storyboard */; };
 		25F4DF601DAE9A89004C5201 /* MuvesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F4DF5F1DAE9A89004C5201 /* MuvesTests.swift */; };
 		25F4DF6B1DAE9A89004C5201 /* MuvesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F4DF6A1DAE9A89004C5201 /* MuvesUITests.swift */; };
+		25F4DF791DAEA7D0004C5201 /* ClimaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F4DF781DAEA7D0004C5201 /* ClimaViewController.swift */; };
+		25F4DF7B1DAEA7DD004C5201 /* CalidadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F4DF7A1DAEA7DD004C5201 /* CalidadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +61,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		251A64A51DB91ECC0083427F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
+		2554DBBB1DB7E645006C89B8 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		258CADD01DB83120000A4392 /* canarioGPS.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = canarioGPS.gpx; sourceTree = "<group>"; };
+		258F50BF1DAFFE9000236CBE /* DireccionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DireccionViewController.swift; sourceTree = "<group>"; };
+		258F50C11DB035B700236CBE /* ReportarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportarViewController.swift; sourceTree = "<group>"; };
+		258F50C31DB039A000236CBE /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		259E30A21DDB7AC10091557A /* TwitterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterTableViewCell.swift; sourceTree = "<group>"; };
+		259E30A51DDB8B3C0091557A /* AlertasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertasTableViewCell.swift; sourceTree = "<group>"; };
+		25A174C61DB9196D00E34A50 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		25A174C71DB9196D00E34A50 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
+		25A174C81DB9196D00E34A50 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
+		25A174C91DB9196D00E34A50 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = SOURCE_ROOT; };
+		25AF1C771DB1AA79008E3D46 /* HorasYahooCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorasYahooCollectionViewCell.swift; sourceTree = "<group>"; };
+		25AF1C791DB1AA88008E3D46 /* DiasYahooCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiasYahooCollectionViewCell.swift; sourceTree = "<group>"; };
+		25C185ED1DAEF109002E94F7 /* Chivo-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Black.otf"; sourceTree = "<group>"; };
+		25C185EE1DAEF109002E94F7 /* Chivo-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-BlackItalic.otf"; sourceTree = "<group>"; };
+		25C185EF1DAEF109002E94F7 /* Chivo-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Bold.otf"; sourceTree = "<group>"; };
+		25C185F01DAEF109002E94F7 /* Chivo-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-BoldItalic.otf"; sourceTree = "<group>"; };
+		25C185F11DAEF109002E94F7 /* Chivo-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Italic.otf"; sourceTree = "<group>"; };
+		25C185F21DAEF109002E94F7 /* Chivo-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Light.otf"; sourceTree = "<group>"; };
+		25C185F31DAEF109002E94F7 /* Chivo-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-LightItalic.otf"; sourceTree = "<group>"; };
+		25C185F41DAEF109002E94F7 /* Chivo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Regular.ttf"; sourceTree = "<group>"; };
+		25C185FD1DAEF944002E94F7 /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
+		25C185FF1DAEF954002E94F7 /* AlertasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertasViewController.swift; sourceTree = "<group>"; };
+		25C186011DAEF96C002E94F7 /* ConfiguracionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfiguracionViewController.swift; sourceTree = "<group>"; };
 		25F4DF471DAE9A89004C5201 /* Muves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muves.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F4DF4A1DAE9A89004C5201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		25F4DF4C1DAE9A89004C5201 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		25F4DF4C1DAE9A89004C5201 /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
 		25F4DF4F1DAE9A89004C5201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25F4DF511DAE9A89004C5201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25F4DF541DAE9A89004C5201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +99,8 @@
 		25F4DF661DAE9A89004C5201 /* MuvesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuvesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F4DF6A1DAE9A89004C5201 /* MuvesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuvesUITests.swift; sourceTree = "<group>"; };
 		25F4DF6C1DAE9A89004C5201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25F4DF781DAEA7D0004C5201 /* ClimaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClimaViewController.swift; sourceTree = "<group>"; };
+		25F4DF7A1DAEA7DD004C5201 /* CalidadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalidadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +108,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A174CA1DB9196D00E34A50 /* Fabric.framework in Frameworks */,
+				25A174CD1DB9196D00E34A50 /* TwitterCore.framework in Frameworks */,
+				251A64A61DB91ECC0083427F /* Crashlytics.framework in Frameworks */,
+				25A174CB1DB9196D00E34A50 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +135,7 @@
 		25F4DF3E1DAE9A88004C5201 = {
 			isa = PBXGroup;
 			children = (
+				258CADD01DB83120000A4392 /* canarioGPS.gpx */,
 				25F4DF491DAE9A89004C5201 /* Muves */,
 				25F4DF5E1DAE9A89004C5201 /* MuvesTests */,
 				25F4DF691DAE9A89004C5201 /* MuvesUITests */,
@@ -98,11 +157,37 @@
 			isa = PBXGroup;
 			children = (
 				25F4DF4A1DAE9A89004C5201 /* AppDelegate.swift */,
-				25F4DF4C1DAE9A89004C5201 /* ViewController.swift */,
+				25F4DF4C1DAE9A89004C5201 /* MapaViewController.swift */,
+				258F50C11DB035B700236CBE /* ReportarViewController.swift */,
+				258F50BF1DAFFE9000236CBE /* DireccionViewController.swift */,
+				25F4DF781DAEA7D0004C5201 /* ClimaViewController.swift */,
+				25AF1C771DB1AA79008E3D46 /* HorasYahooCollectionViewCell.swift */,
+				25AF1C791DB1AA88008E3D46 /* DiasYahooCollectionViewCell.swift */,
+				25F4DF7A1DAEA7DD004C5201 /* CalidadViewController.swift */,
+				25C185FD1DAEF944002E94F7 /* TwitterViewController.swift */,
+				259E30A21DDB7AC10091557A /* TwitterTableViewCell.swift */,
+				25C185FF1DAEF954002E94F7 /* AlertasViewController.swift */,
+				259E30A51DDB8B3C0091557A /* AlertasTableViewCell.swift */,
+				25C186011DAEF96C002E94F7 /* ConfiguracionViewController.swift */,
+				258F50C31DB039A000236CBE /* CheckBox.swift */,
+				2554DBBB1DB7E645006C89B8 /* SwiftyJSON.swift */,
 				25F4DF4E1DAE9A89004C5201 /* Main.storyboard */,
 				25F4DF511DAE9A89004C5201 /* Assets.xcassets */,
 				25F4DF531DAE9A89004C5201 /* LaunchScreen.storyboard */,
 				25F4DF561DAE9A89004C5201 /* Info.plist */,
+				25C185ED1DAEF109002E94F7 /* Chivo-Black.otf */,
+				25C185EE1DAEF109002E94F7 /* Chivo-BlackItalic.otf */,
+				25C185EF1DAEF109002E94F7 /* Chivo-Bold.otf */,
+				25C185F01DAEF109002E94F7 /* Chivo-BoldItalic.otf */,
+				25C185F11DAEF109002E94F7 /* Chivo-Italic.otf */,
+				25C185F21DAEF109002E94F7 /* Chivo-Light.otf */,
+				25C185F31DAEF109002E94F7 /* Chivo-LightItalic.otf */,
+				25C185F41DAEF109002E94F7 /* Chivo-Regular.ttf */,
+				251A64A51DB91ECC0083427F /* Crashlytics.framework */,
+				25A174C61DB9196D00E34A50 /* Fabric.framework */,
+				25A174C71DB9196D00E34A50 /* TwitterKit.framework */,
+				25A174C81DB9196D00E34A50 /* TwitterKitResources.bundle */,
+				25A174C91DB9196D00E34A50 /* TwitterCore.framework */,
 			);
 			path = Muves;
 			sourceTree = "<group>";
@@ -135,6 +220,7 @@
 				25F4DF431DAE9A88004C5201 /* Sources */,
 				25F4DF441DAE9A88004C5201 /* Frameworks */,
 				25F4DF451DAE9A88004C5201 /* Resources */,
+				251A64A41DB91C2F0083427F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -193,6 +279,7 @@
 				TargetAttributes = {
 					25F4DF461DAE9A88004C5201 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6VKPMZ9YA7;
 						ProvisioningStyle = Automatic;
 					};
 					25F4DF5A1DAE9A89004C5201 = {
@@ -232,6 +319,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25C185F51DAEF12F002E94F7 /* Chivo-Black.otf in Resources */,
+				25C185F61DAEF12F002E94F7 /* Chivo-BlackItalic.otf in Resources */,
+				25A174CC1DB9196D00E34A50 /* TwitterKitResources.bundle in Resources */,
+				258CADD11DB83120000A4392 /* canarioGPS.gpx in Resources */,
+				25C185F71DAEF12F002E94F7 /* Chivo-Bold.otf in Resources */,
+				25C185F81DAEF12F002E94F7 /* Chivo-BoldItalic.otf in Resources */,
+				25C185F91DAEF12F002E94F7 /* Chivo-Italic.otf in Resources */,
+				25C185FA1DAEF12F002E94F7 /* Chivo-Light.otf in Resources */,
+				25C185FB1DAEF12F002E94F7 /* Chivo-LightItalic.otf in Resources */,
+				25C185FC1DAEF12F002E94F7 /* Chivo-Regular.ttf in Resources */,
 				25F4DF551DAE9A89004C5201 /* LaunchScreen.storyboard in Resources */,
 				25F4DF521DAE9A89004C5201 /* Assets.xcassets in Resources */,
 				25F4DF501DAE9A89004C5201 /* Main.storyboard in Resources */,
@@ -254,13 +351,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		251A64A41DB91C2F0083427F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 601bfc64f698e5cffc4696db8735febd3b51e9ad c5a943407ce309fb8b27e486f00852bace1bb87365292905f4dc3e51a52fb060";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		25F4DF431DAE9A88004C5201 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25F4DF4D1DAE9A89004C5201 /* ViewController.swift in Sources */,
+				25AF1C7A1DB1AA88008E3D46 /* DiasYahooCollectionViewCell.swift in Sources */,
+				259E30A31DDB7AC10091557A /* TwitterTableViewCell.swift in Sources */,
+				25F4DF4D1DAE9A89004C5201 /* MapaViewController.swift in Sources */,
+				25AF1C781DB1AA79008E3D46 /* HorasYahooCollectionViewCell.swift in Sources */,
 				25F4DF4B1DAE9A89004C5201 /* AppDelegate.swift in Sources */,
+				258F50C21DB035B700236CBE /* ReportarViewController.swift in Sources */,
+				25C186021DAEF96C002E94F7 /* ConfiguracionViewController.swift in Sources */,
+				258F50C41DB039A000236CBE /* CheckBox.swift in Sources */,
+				259E30A61DDB8B3C0091557A /* AlertasTableViewCell.swift in Sources */,
+				25C185FE1DAEF944002E94F7 /* TwitterViewController.swift in Sources */,
+				25F4DF7B1DAEA7DD004C5201 /* CalidadViewController.swift in Sources */,
+				258F50C01DAFFE9000236CBE /* DireccionViewController.swift in Sources */,
+				25F4DF791DAEA7D0004C5201 /* ClimaViewController.swift in Sources */,
+				2554DBBC1DB7E645006C89B8 /* SwiftyJSON.swift in Sources */,
+				25C186001DAEF954002E94F7 /* AlertasViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +536,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6VKPMZ9YA7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Muves",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Muves/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rasoft.Muves;
@@ -422,6 +554,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6VKPMZ9YA7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Muves",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Muves/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rasoft.Muves;
@@ -503,6 +641,7 @@
 				25F4DF711DAE9A89004C5201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25F4DF721DAE9A89004C5201 /* Build configuration list for PBXNativeTarget "MuvesTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +650,7 @@
 				25F4DF741DAE9A89004C5201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25F4DF751DAE9A89004C5201 /* Build configuration list for PBXNativeTarget "MuvesUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +659,7 @@
 				25F4DF771DAE9A89004C5201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
