@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25079A3F1DE7BC310015CD83 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25079A3E1DE7BC310015CD83 /* HomeViewController.swift */; };
+		25079A421DE7BD490015CD83 /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25079A401DE7BD490015CD83 /* CollapsibleTableViewHeader.swift */; };
+		25079A431DE7BD490015CD83 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25079A411DE7BD490015CD83 /* Extensions.swift */; };
 		251A64A61DB91ECC0083427F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251A64A51DB91ECC0083427F /* Crashlytics.framework */; };
 		2554DBBC1DB7E645006C89B8 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2554DBBB1DB7E645006C89B8 /* SwiftyJSON.swift */; };
+		258161D51E01C6AC00E3078E /* TareasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258161D41E01C6AC00E3078E /* TareasViewController.swift */; };
+		258161D71E01D01C00E3078E /* TareasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258161D61E01D01C00E3078E /* TareasCollectionViewCell.swift */; };
 		258CADD11DB83120000A4392 /* canarioGPS.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 258CADD01DB83120000A4392 /* canarioGPS.gpx */; };
 		258F50C01DAFFE9000236CBE /* DireccionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F50BF1DAFFE9000236CBE /* DireccionViewController.swift */; };
 		258F50C21DB035B700236CBE /* ReportarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F50C11DB035B700236CBE /* ReportarViewController.swift */; };
 		258F50C41DB039A000236CBE /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F50C31DB039A000236CBE /* CheckBox.swift */; };
+		259C1D451E03529C003067A6 /* VehiculoDetallesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259C1D441E03529C003067A6 /* VehiculoDetallesViewController.swift */; };
 		259E30A31DDB7AC10091557A /* TwitterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259E30A21DDB7AC10091557A /* TwitterTableViewCell.swift */; };
 		259E30A61DDB8B3C0091557A /* AlertasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259E30A51DDB8B3C0091557A /* AlertasTableViewCell.swift */; };
 		25A174CA1DB9196D00E34A50 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A174C61DB9196D00E34A50 /* Fabric.framework */; };
@@ -32,6 +38,7 @@
 		25C185FE1DAEF944002E94F7 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C185FD1DAEF944002E94F7 /* TwitterViewController.swift */; };
 		25C186001DAEF954002E94F7 /* AlertasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C185FF1DAEF954002E94F7 /* AlertasViewController.swift */; };
 		25C186021DAEF96C002E94F7 /* ConfiguracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C186011DAEF96C002E94F7 /* ConfiguracionViewController.swift */; };
+		25CD00B21E00BC3C0099D2A9 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CD00B11E00BC3C0099D2A9 /* PerfilViewController.swift */; };
 		25F4DF4B1DAE9A89004C5201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F4DF4A1DAE9A89004C5201 /* AppDelegate.swift */; };
 		25F4DF4D1DAE9A89004C5201 /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F4DF4C1DAE9A89004C5201 /* MapaViewController.swift */; };
 		25F4DF501DAE9A89004C5201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F4DF4E1DAE9A89004C5201 /* Main.storyboard */; };
@@ -61,12 +68,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25079A3E1DE7BC310015CD83 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		25079A401DE7BD490015CD83 /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
+		25079A411DE7BD490015CD83 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		251A64A51DB91ECC0083427F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		2554DBBB1DB7E645006C89B8 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		258161D41E01C6AC00E3078E /* TareasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TareasViewController.swift; sourceTree = "<group>"; };
+		258161D61E01D01C00E3078E /* TareasCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TareasCollectionViewCell.swift; sourceTree = "<group>"; };
 		258CADD01DB83120000A4392 /* canarioGPS.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = canarioGPS.gpx; sourceTree = "<group>"; };
 		258F50BF1DAFFE9000236CBE /* DireccionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DireccionViewController.swift; sourceTree = "<group>"; };
 		258F50C11DB035B700236CBE /* ReportarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportarViewController.swift; sourceTree = "<group>"; };
 		258F50C31DB039A000236CBE /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		259C1D441E03529C003067A6 /* VehiculoDetallesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiculoDetallesViewController.swift; sourceTree = "<group>"; };
 		259E30A21DDB7AC10091557A /* TwitterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterTableViewCell.swift; sourceTree = "<group>"; };
 		259E30A51DDB8B3C0091557A /* AlertasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertasTableViewCell.swift; sourceTree = "<group>"; };
 		25A174C61DB9196D00E34A50 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
@@ -86,6 +99,7 @@
 		25C185FD1DAEF944002E94F7 /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 		25C185FF1DAEF954002E94F7 /* AlertasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertasViewController.swift; sourceTree = "<group>"; };
 		25C186011DAEF96C002E94F7 /* ConfiguracionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfiguracionViewController.swift; sourceTree = "<group>"; };
+		25CD00B11E00BC3C0099D2A9 /* PerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		25F4DF471DAE9A89004C5201 /* Muves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muves.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F4DF4A1DAE9A89004C5201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25F4DF4C1DAE9A89004C5201 /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +146,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25CD00B31E00BC430099D2A9 /* Privada */ = {
+			isa = PBXGroup;
+			children = (
+				25079A3E1DE7BC310015CD83 /* HomeViewController.swift */,
+				259C1D441E03529C003067A6 /* VehiculoDetallesViewController.swift */,
+				25CD00B11E00BC3C0099D2A9 /* PerfilViewController.swift */,
+				25079A401DE7BD490015CD83 /* CollapsibleTableViewHeader.swift */,
+				25079A411DE7BD490015CD83 /* Extensions.swift */,
+				258161D41E01C6AC00E3078E /* TareasViewController.swift */,
+				258161D61E01D01C00E3078E /* TareasCollectionViewCell.swift */,
+			);
+			name = Privada;
+			sourceTree = "<group>";
+		};
+		25CD00B41E00BC750099D2A9 /* Publica */ = {
+			isa = PBXGroup;
+			children = (
+				25F4DF4C1DAE9A89004C5201 /* MapaViewController.swift */,
+				258F50C11DB035B700236CBE /* ReportarViewController.swift */,
+				258F50BF1DAFFE9000236CBE /* DireccionViewController.swift */,
+				25F4DF781DAEA7D0004C5201 /* ClimaViewController.swift */,
+				25AF1C771DB1AA79008E3D46 /* HorasYahooCollectionViewCell.swift */,
+				25AF1C791DB1AA88008E3D46 /* DiasYahooCollectionViewCell.swift */,
+				25F4DF7A1DAEA7DD004C5201 /* CalidadViewController.swift */,
+				25C185FD1DAEF944002E94F7 /* TwitterViewController.swift */,
+				259E30A21DDB7AC10091557A /* TwitterTableViewCell.swift */,
+				25C185FF1DAEF954002E94F7 /* AlertasViewController.swift */,
+				259E30A51DDB8B3C0091557A /* AlertasTableViewCell.swift */,
+				25C186011DAEF96C002E94F7 /* ConfiguracionViewController.swift */,
+				258F50C31DB039A000236CBE /* CheckBox.swift */,
+			);
+			name = Publica;
+			sourceTree = "<group>";
+		};
 		25F4DF3E1DAE9A88004C5201 = {
 			isa = PBXGroup;
 			children = (
@@ -157,19 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				25F4DF4A1DAE9A89004C5201 /* AppDelegate.swift */,
-				25F4DF4C1DAE9A89004C5201 /* MapaViewController.swift */,
-				258F50C11DB035B700236CBE /* ReportarViewController.swift */,
-				258F50BF1DAFFE9000236CBE /* DireccionViewController.swift */,
-				25F4DF781DAEA7D0004C5201 /* ClimaViewController.swift */,
-				25AF1C771DB1AA79008E3D46 /* HorasYahooCollectionViewCell.swift */,
-				25AF1C791DB1AA88008E3D46 /* DiasYahooCollectionViewCell.swift */,
-				25F4DF7A1DAEA7DD004C5201 /* CalidadViewController.swift */,
-				25C185FD1DAEF944002E94F7 /* TwitterViewController.swift */,
-				259E30A21DDB7AC10091557A /* TwitterTableViewCell.swift */,
-				25C185FF1DAEF954002E94F7 /* AlertasViewController.swift */,
-				259E30A51DDB8B3C0091557A /* AlertasTableViewCell.swift */,
-				25C186011DAEF96C002E94F7 /* ConfiguracionViewController.swift */,
-				258F50C31DB039A000236CBE /* CheckBox.swift */,
+				25CD00B41E00BC750099D2A9 /* Publica */,
+				25CD00B31E00BC430099D2A9 /* Privada */,
 				2554DBBB1DB7E645006C89B8 /* SwiftyJSON.swift */,
 				25F4DF4E1DAE9A89004C5201 /* Main.storyboard */,
 				25F4DF511DAE9A89004C5201 /* Assets.xcassets */,
@@ -372,14 +409,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				258161D71E01D01C00E3078E /* TareasCollectionViewCell.swift in Sources */,
 				25AF1C7A1DB1AA88008E3D46 /* DiasYahooCollectionViewCell.swift in Sources */,
+				25079A431DE7BD490015CD83 /* Extensions.swift in Sources */,
 				259E30A31DDB7AC10091557A /* TwitterTableViewCell.swift in Sources */,
 				25F4DF4D1DAE9A89004C5201 /* MapaViewController.swift in Sources */,
 				25AF1C781DB1AA79008E3D46 /* HorasYahooCollectionViewCell.swift in Sources */,
+				25079A3F1DE7BC310015CD83 /* HomeViewController.swift in Sources */,
 				25F4DF4B1DAE9A89004C5201 /* AppDelegate.swift in Sources */,
+				25CD00B21E00BC3C0099D2A9 /* PerfilViewController.swift in Sources */,
+				258161D51E01C6AC00E3078E /* TareasViewController.swift in Sources */,
 				258F50C21DB035B700236CBE /* ReportarViewController.swift in Sources */,
+				259C1D451E03529C003067A6 /* VehiculoDetallesViewController.swift in Sources */,
 				25C186021DAEF96C002E94F7 /* ConfiguracionViewController.swift in Sources */,
 				258F50C41DB039A000236CBE /* CheckBox.swift in Sources */,
+				25079A421DE7BD490015CD83 /* CollapsibleTableViewHeader.swift in Sources */,
 				259E30A61DDB8B3C0091557A /* AlertasTableViewCell.swift in Sources */,
 				25C185FE1DAEF944002E94F7 /* TwitterViewController.swift in Sources */,
 				25F4DF7B1DAEA7DD004C5201 /* CalidadViewController.swift in Sources */,

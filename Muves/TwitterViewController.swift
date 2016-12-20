@@ -12,9 +12,9 @@ class TwitterViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var flechaUIButton: UIButton!
     @IBOutlet weak var menuView: UIView!
     @IBOutlet weak var twitterTableView: UITableView!
-    let imagenes : [String] = ["locacion", "lupa", "palomita"]
-    let nombres : [String] = ["uno", "dons", "tres"]
-    let descripciones : [String] = ["Students from @ITCH_Comunica have designed a race car & won 3rd place in the cost category of the Formula SAE series bit.ly/2fUE9Kj", "El Instituto Tecnológico de Chihuahua diseña un auto de carreras y consigue un tercer lugar en la serie Fórmula SAE bit.ly/2fRwFFq","El Instituto Tecnológico de Chihuahua diseña un auto de carreras y consigue un tercer lugar en la serie Fórmula SAE bit.ly/2fRwFFq"]
+    var jsonData : JSON!
+    var totalTweets : Int = 0
+    var imageCache = [String:UIImage]()
     override func viewDidLoad() {
         super.viewDidLoad()
         //Colocar la vista de Menu en frente
@@ -27,16 +27,131 @@ class TwitterViewController: UIViewController, UITableViewDelegate, UITableViewD
         twitterTableView.layer.cornerRadius = 5.0
         twitterTableView.separatorColor = UIColor.black
         
+        downloadData()
+        
+        // Implementar Pull to Refresh a la tabla
+        let refreshControl = UIRefreshControl()
+        twitterTableView.addSubview(refreshControl)
+        let RefreshControlColor = UIColor(red: 230.0/255.0, green: 74.0/255.0, blue: 25.0/255.0, alpha: 1.0)
+        refreshControl.tintColor = RefreshControlColor
+        /*let RefreshTitleText = "Actualizando restaurantes" as NSString
+         let attributedString = NSMutableAttributedString(string: RefreshTitleText as String)
+         let firstAttributes = [NSForegroundColorAttributeName: RefreshControlColor, NSBackgroundColorAttributeName: UIColor.clearColor(), NSUnderlineStyleAttributeName: 0]
+         attributedString.addAttributes(firstAttributes, range: RefreshTitleText.rangeOfString("Actualizando sensores"))
+         refreshControl.attributedTitle = attributedString*/
+        refreshControl.addTarget(self, action: #selector (self.UpdateTable(refreshControl:)), for: .valueChanged)
+    }
+    func UpdateTable(refreshControl: UIRefreshControl) {
+        downloadData()
+        twitterTableView.reloadData()
+        print("tabla actualizada")
+        refreshControl.endRefreshing()
+    }
+    func downloadData() {
+        // Petición GET al servidor
+        let url = URL(string: "http://192.168.5.105/muves2web/api/twitter/getJsonTwitter")
+        var request = URLRequest(url:url!)
+        request.httpMethod = "GET"
+        
+        let task = URLSession.shared.dataTask(with: request) {data, response, error in
+            if error != nil {
+                // handle error here
+                print("Error al principio")
+                print(error)
+                return
+            }
+            
+            // if response was JSON, then parse it
+            
+            do {
+                self.jsonData = JSON(data: data!, options: [], error: nil)
+                print("JSON=\(self.jsonData)")
+                
+                DispatchQueue.main.async {
+                    self.totalTweets = self.jsonData.count
+                    self.twitterTableView.reloadData()
+                }
+                /*if let responseDictionary = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
+                 
+                 //print("success == \(responseDictionary)")
+                 
+                 // note, if you want to update the UI, make sure to dispatch that to the main queue, e.g.:
+                 //
+                 DispatchQueue.main.async {
+                 print("Recargo datos")
+                 }
+                 
+                 }*/
+            } catch {
+                print(error)
+                
+                let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                print("responseString = \(responseString)")
+            }
+        }
+        task.resume()
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return imagenes.count
+        return totalTweets
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "twitterCell", for: indexPath as IndexPath) as! TwitterTableViewCell
-        cell.twitterImageView.image = UIImage(named: imagenes[indexPath.row])
-        cell.twitterUsuarioLabel.text = nombres[indexPath.row]
-        cell.twitterDescripcionLabel.text = descripciones[indexPath.row]
+        cell.twitterUsuarioLabel.text = jsonData[indexPath.row]["user_screen_name"].stringValue
+        cell.twitterDescripcionLabel.text = jsonData[indexPath.row]["text"].stringValue
+        
+        // If this image is already cached, don't re-download
+        let urlString = jsonData[indexPath.row]["user_profile_image_url"].stringValue
+        let imgURL = NSURL(string: urlString)
+        if let img = imageCache[urlString] {
+            cell.twitterImageView.image = img
+        }
+        else {
+            // The image isn't cached, download the img data
+            // We should perform this in a background thread
+            var request2 = URLRequest(url: imgURL as! URL, cachePolicy: NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData, timeoutInterval: 5)
+            request2.httpMethod = "GET"
+            request2.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            request2.addValue("application/json", forHTTPHeaderField: "Accept")
+
+            let task2 = URLSession.shared.dataTask(with: request2) {data, response, error in
+                if error != nil {
+                    // handle error here
+                    print("Error al principio")
+                    print(error!.localizedDescription)
+                    return
+                }
+                
+                // if response was JSON, then parse it
+                
+                do {
+                    let image = UIImage(data: data!)
+                    // Store the image in to our cache
+                    self.imageCache[urlString] = image
+                    
+                    DispatchQueue.main.async {
+                        cell.twitterImageView.image = image
+                    }
+                    /*if let responseDictionary = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
+                     
+                     //print("success == \(responseDictionary)")
+                     
+                     // note, if you want to update the UI, make sure to dispatch that to the main queue, e.g.:
+                     //
+                     DispatchQueue.main.async {
+                     print("Recargo datos")
+                     }
+                     
+                     }*/
+                } catch {
+                    print(error)
+                    
+                    let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                    print("responseString = \(responseString)")
+                }
+            }
+            task2.resume()
+        }
         return cell
     }
    

@@ -77,6 +77,20 @@ class MapaViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector (self.handleTap(gestureReconizer:)))
         gestureRecognizer.delegate = self
         MapView.addGestureRecognizer(gestureRecognizer)
+        
+        //agregar ruta
+        let track = Track()
+        track.latitude.append("19.2647424")
+        track.longitude.append("-103.7157062")
+        track.latitude.append("19.2649215")
+        track.longitude.append("-103.7160807")
+        track.latitude.append("19.2664483")
+        track.longitude.append("-103.7155511")
+        track.latitude.append("19.2673705")
+        track.longitude.append("-103.7172173")
+        track.latitude.append("19.2741941")
+        track.longitude.append("-103.71506")
+        addRoute(track: track)
     }
 
     override func didReceiveMemoryWarning() {
@@ -235,10 +249,6 @@ class MapaViewController: UIViewController, CLLocationManagerDelegate, MKMapView
             })
             flechaUIButton.setBackgroundImage(UIImage(named: "flecha_der"), for: UIControlState.normal)
         }
-        
-        
-        
-        
     }
     @IBAction func reportarEvento(_ sender: AnyObject) {
         self.performSegue(withIdentifier: "popoverSegue", sender: self)
@@ -295,9 +305,41 @@ class MapaViewController: UIViewController, CLLocationManagerDelegate, MKMapView
             reportarViewController.directionDictionary = directionDictionary
         }
     }
-
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        
+        if overlay is MKPolyline {
+            let lineView = MKPolylineRenderer(overlay: overlay)
+            lineView.strokeColor = UIColor.red
+            lineView.lineWidth = 2
+            
+            return lineView
+        }
+        
+        return MKOverlayRenderer()
+    }
+    
+    
+    func addRoute(track : Track) {
+        if track.latitude.count == 0 {
+            return
+        }
+        var pointsToUse: [CLLocationCoordinate2D] = []
+        
+        for i in 0...track.latitude.count-1 {
+            let x = CLLocationDegrees((track.latitude[i] as NSString).doubleValue)
+            let y = CLLocationDegrees((track.longitude[i] as NSString).doubleValue)
+            pointsToUse += [CLLocationCoordinate2DMake(x, y)]
+        }
+        let myPolyline = MKGeodesicPolyline(coordinates: pointsToUse, count: track.latitude.count)
+        MapView.add(myPolyline)
+    }
+ 
 }
 class CustomPointAnnotation: MKPointAnnotation {
     var imageName: String!
+}
+class Track{
+    var latitude : [String] = []
+    var longitude : [String] = []
 }
 
