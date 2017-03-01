@@ -49,7 +49,7 @@ class AlertasViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     func downloadData() {
         // Petición GET al servidor
-        let url = URL(string: "http://192.168.5.105/muves2web/api/twitter/getJsonAvisos")
+        let url = URL(string: "http://192.168.5.196/muves2web/api/twitter/getJsonAvisos")
         var request = URLRequest(url:url!)
         request.httpMethod = "GET"
         
@@ -80,7 +80,6 @@ class AlertasViewController: UIViewController, UITableViewDelegate, UITableViewD
                  DispatchQueue.main.async {
                  print("Recargo datos")
                  }
-                 
                  }*/
             } catch {
                 print(error)

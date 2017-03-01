@@ -49,7 +49,7 @@ class TwitterViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     func downloadData() {
         // Petición GET al servidor
-        let url = URL(string: "http://192.168.5.105/muves2web/api/twitter/getJsonTwitter")
+        let url = URL(string: "http://192.168.5.196/muves2web/api/twitter/getJsonTwitter")
         var request = URLRequest(url:url!)
         request.httpMethod = "GET"
         

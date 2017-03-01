@@ -96,8 +96,7 @@ class VehiculoDetallesViewController: UIViewController, CLLocationManagerDelegat
         guard !annotation.isKind(of: MKUserLocation.self) else {
             return nil
         }
-        
-        
+
         let annotationIdentifier = "AnnotationIdentifier"
         
         var annotationView: MKAnnotationView?
@@ -127,9 +126,7 @@ class VehiculoDetallesViewController: UIViewController, CLLocationManagerDelegat
             // Set Pin Image
             annotationView.image = resizedImage
         }
-        
         return annotationView
-        
     }
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         

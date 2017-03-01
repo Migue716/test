@@ -12,6 +12,7 @@ import CoreLocation
 import AddressBook
 import Foundation
 import Contacts
+import Moscapsule
 //
 // MARK: - Section Data Structure
 //
@@ -30,6 +31,8 @@ struct Section {
 // MARK: - View Controller
 //
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,CLLocationManagerDelegate, MKMapViewDelegate, UIPopoverPresentationControllerDelegate {
+    let mqttConfig = MQTTConfig(clientId: "ramsesMac", host: "192.168.5.112", port: 1883, keepAlive: 60)
+    var mqttClient : MQTTClient! = nil
     var sections = [Section]()
     var locationManager: CLLocationManager!
     @IBOutlet weak var flechaUIButton: UIButton!
@@ -95,6 +98,31 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         //let annotation = MKPointAnnotation()
         annotation.coordinate = coordinate
         mapView.addAnnotation(annotation)
+        
+        // Recibir información por MQTT
+        mqttConfig.onPublishCallback = { messageId in
+            print("mensaje: \(messageId)")
+            // successful publish
+        }
+        
+        mqttConfig.onMessageCallback = { mqttMessage in
+            //NSLog("MQTT Message received: payload=\(mqttMessage.payloadString)")
+            print("MQTT Message received: payload=\(mqttMessage.payloadString!)")
+            let receivedMessage = mqttMessage.payloadString!
+            print("from server msg = \(receivedMessage)")
+            let data = receivedMessage.data(using: .utf8, allowLossyConversion: false)!
+            print("xxxxxxx = \(data)")
+            DispatchQueue.main.async {
+                
+            }
+        }
+        
+        mqttConfig.onSubscribeCallback = { (messageId, grantedQos) in
+            NSLog("subscribed (mid=\(messageId),grantedQos=\(grantedQos))")
+        }
+    
+        mqttClient = MQTT.newConnection(mqttConfig)
+        mqttClient.subscribe("/BROKER/TRAFFIC", qos: 2)
     }
     
     @IBAction func abrirMenuButton(_ sender: AnyObject) {

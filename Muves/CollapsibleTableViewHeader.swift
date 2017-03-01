@@ -57,7 +57,7 @@ class CollapsibleTableViewHeader: UITableViewHeaderFooterView {
         titleLabel.textColor = UIColor.black
         arrowLabel.textColor = UIColor.black
         
-        // La siguiente condición es para ocultar el signo de + y - cuando no hay submenu
+        // La siguiente condición es para ocultar el signo de + y - cuando no hay submenu3
         if (titleLabel.text == "Inicio" || titleLabel.text == "Dispositivo" || titleLabel.text == "Usuario" || titleLabel.text == "Reportes") {
                 arrowLabel.isHidden = true
         }

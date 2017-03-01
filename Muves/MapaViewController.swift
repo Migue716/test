@@ -78,6 +78,7 @@ class MapaViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         gestureRecognizer.delegate = self
         MapView.addGestureRecognizer(gestureRecognizer)
         
+        /*
         //agregar ruta
         let track = Track()
         track.latitude.append("19.2647424")
@@ -91,6 +92,7 @@ class MapaViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         track.latitude.append("19.2741941")
         track.longitude.append("-103.71506")
         addRoute(track: track)
+         */
     }
 
     override func didReceiveMemoryWarning() {

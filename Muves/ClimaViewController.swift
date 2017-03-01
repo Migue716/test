@@ -65,8 +65,10 @@ class ClimaViewController: UIViewController, UICollectionViewDataSource, UIColle
         principalView.layer.cornerRadius = 5.0
         
         // Petición GET al servidor
-        let url = URL(string: "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22(\(latitud!),\(longitud!))%22)%20and%20u%3D%22c%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys")
+        //let url = URL(string: "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22(\(latitud!),\(longitud!))%22)%20and%20u%3D%22c%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys")
+        let url = URL(string: "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22colima%22)%20and%20u%3D%22c%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys")
         var request = URLRequest(url:url!)
+        print("url: \(url)")
         request.httpMethod = "GET"
         //let task = URLSession.shared.dataTask(with: request, completionHandler: { data, response, error in
         
@@ -83,6 +85,7 @@ class ClimaViewController: UIViewController, UICollectionViewDataSource, UIColle
             
             do {
                 self.jsonData = JSON(data: data!, options: [], error: nil)
+                print("Respuesta: \(self.jsonData)")
                 print("Ciudad=\(self.jsonData ["query"]["results"]["channel"]["location"]["city"])")
                 print("Temp Actual=\(self.jsonData ["query"]["results"]["channel"]["item"]["condition"]["temp"])")
                 print("Temp Icono ID=\(self.jsonData ["query"]["results"]["channel"]["item"]["forecast"][0]["code"])")

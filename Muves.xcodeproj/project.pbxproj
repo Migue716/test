@@ -11,6 +11,7 @@
 		25079A421DE7BD490015CD83 /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25079A401DE7BD490015CD83 /* CollapsibleTableViewHeader.swift */; };
 		25079A431DE7BD490015CD83 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25079A411DE7BD490015CD83 /* Extensions.swift */; };
 		251A64A61DB91ECC0083427F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251A64A51DB91ECC0083427F /* Crashlytics.framework */; };
+		252E197B1E0B03AD00FA2277 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 252E197A1E0B03AD00FA2277 /* Podfile */; };
 		2554DBBC1DB7E645006C89B8 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2554DBBB1DB7E645006C89B8 /* SwiftyJSON.swift */; };
 		258161D51E01C6AC00E3078E /* TareasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258161D41E01C6AC00E3078E /* TareasViewController.swift */; };
 		258161D71E01D01C00E3078E /* TareasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258161D61E01D01C00E3078E /* TareasCollectionViewCell.swift */; };
@@ -48,6 +49,7 @@
 		25F4DF6B1DAE9A89004C5201 /* MuvesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F4DF6A1DAE9A89004C5201 /* MuvesUITests.swift */; };
 		25F4DF791DAEA7D0004C5201 /* ClimaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F4DF781DAEA7D0004C5201 /* ClimaViewController.swift */; };
 		25F4DF7B1DAEA7DD004C5201 /* CalidadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F4DF7A1DAEA7DD004C5201 /* CalidadViewController.swift */; };
+		8878C206325957DD79D7C53E /* Pods_Muves.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C6F71D50A19992DD2B0200 /* Pods_Muves.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,7 @@
 		25079A401DE7BD490015CD83 /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
 		25079A411DE7BD490015CD83 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		251A64A51DB91ECC0083427F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
+		252E197A1E0B03AD00FA2277 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		2554DBBB1DB7E645006C89B8 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		258161D41E01C6AC00E3078E /* TareasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TareasViewController.swift; sourceTree = "<group>"; };
 		258161D61E01D01C00E3078E /* TareasCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TareasCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -115,6 +118,9 @@
 		25F4DF6C1DAE9A89004C5201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25F4DF781DAEA7D0004C5201 /* ClimaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClimaViewController.swift; sourceTree = "<group>"; };
 		25F4DF7A1DAEA7DD004C5201 /* CalidadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalidadViewController.swift; sourceTree = "<group>"; };
+		A252DD3027FBA135E676EAD1 /* Pods-Muves.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Muves.release.xcconfig"; path = "Pods/Target Support Files/Pods-Muves/Pods-Muves.release.xcconfig"; sourceTree = "<group>"; };
+		AEBB549308F16B8015319A7B /* Pods-Muves.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Muves.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Muves/Pods-Muves.debug.xcconfig"; sourceTree = "<group>"; };
+		D3C6F71D50A19992DD2B0200 /* Pods_Muves.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Muves.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,7 @@
 				25A174CD1DB9196D00E34A50 /* TwitterCore.framework in Frameworks */,
 				251A64A61DB91ECC0083427F /* Crashlytics.framework in Frameworks */,
 				25A174CB1DB9196D00E34A50 /* TwitterKit.framework in Frameworks */,
+				8878C206325957DD79D7C53E /* Pods_Muves.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +153,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		094076056AFB2851E78FF38D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3C6F71D50A19992DD2B0200 /* Pods_Muves.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		25CD00B31E00BC430099D2A9 /* Privada */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,11 +198,14 @@
 		25F4DF3E1DAE9A88004C5201 = {
 			isa = PBXGroup;
 			children = (
+				252E197A1E0B03AD00FA2277 /* Podfile */,
 				258CADD01DB83120000A4392 /* canarioGPS.gpx */,
 				25F4DF491DAE9A89004C5201 /* Muves */,
 				25F4DF5E1DAE9A89004C5201 /* MuvesTests */,
 				25F4DF691DAE9A89004C5201 /* MuvesUITests */,
 				25F4DF481DAE9A89004C5201 /* Products */,
+				6ADC0F7C69F41AEF08D73F34 /* Pods */,
+				094076056AFB2851E78FF38D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -247,6 +265,15 @@
 			path = MuvesUITests;
 			sourceTree = "<group>";
 		};
+		6ADC0F7C69F41AEF08D73F34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEBB549308F16B8015319A7B /* Pods-Muves.debug.xcconfig */,
+				A252DD3027FBA135E676EAD1 /* Pods-Muves.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,10 +281,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25F4DF6F1DAE9A89004C5201 /* Build configuration list for PBXNativeTarget "Muves" */;
 			buildPhases = (
+				1CF258F8705C0FCD110A2E5A /* [CP] Check Pods Manifest.lock */,
 				25F4DF431DAE9A88004C5201 /* Sources */,
 				25F4DF441DAE9A88004C5201 /* Frameworks */,
 				25F4DF451DAE9A88004C5201 /* Resources */,
 				251A64A41DB91C2F0083427F /* ShellScript */,
+				BB83AF66D4A76BCBC0DEDD4A /* [CP] Embed Pods Frameworks */,
+				F185910283A2980245A49011 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -311,7 +341,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Ramses Miramontes Meza";
 				TargetAttributes = {
 					25F4DF461DAE9A88004C5201 = {
@@ -368,6 +398,7 @@
 				25C185FC1DAEF12F002E94F7 /* Chivo-Regular.ttf in Resources */,
 				25F4DF551DAE9A89004C5201 /* LaunchScreen.storyboard in Resources */,
 				25F4DF521DAE9A89004C5201 /* Assets.xcassets in Resources */,
+				252E197B1E0B03AD00FA2277 /* Podfile in Resources */,
 				25F4DF501DAE9A89004C5201 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +420,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1CF258F8705C0FCD110A2E5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		251A64A41DB91C2F0083427F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,6 +447,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run 601bfc64f698e5cffc4696db8735febd3b51e9ad c5a943407ce309fb8b27e486f00852bace1bb87365292905f4dc3e51a52fb060";
+		};
+		BB83AF66D4A76BCBC0DEDD4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Muves/Pods-Muves-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F185910283A2980245A49011 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Muves/Pods-Muves-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -503,6 +579,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -552,6 +629,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -578,7 +656,9 @@
 		};
 		25F4DF701DAE9A89004C5201 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEBB549308F16B8015319A7B /* Pods-Muves.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6VKPMZ9YA7;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -596,7 +676,9 @@
 		};
 		25F4DF711DAE9A89004C5201 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A252DD3027FBA135E676EAD1 /* Pods-Muves.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6VKPMZ9YA7;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -614,6 +696,7 @@
 		};
 		25F4DF731DAE9A89004C5201 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEBB549308F16B8015319A7B /* Pods-Muves.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -628,6 +711,7 @@
 		};
 		25F4DF741DAE9A89004C5201 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A252DD3027FBA135E676EAD1 /* Pods-Muves.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -642,6 +726,7 @@
 		};
 		25F4DF761DAE9A89004C5201 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEBB549308F16B8015319A7B /* Pods-Muves.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MuvesUITests/Info.plist;
@@ -655,6 +740,7 @@
 		};
 		25F4DF771DAE9A89004C5201 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A252DD3027FBA135E676EAD1 /* Pods-Muves.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MuvesUITests/Info.plist;

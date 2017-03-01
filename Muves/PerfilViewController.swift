@@ -36,6 +36,12 @@ class PerfilViewController: UIViewController, UITableViewDelegate, UITableViewDa
         sections[1].items.append("antier")
         sections[1].items.append("ayer")
         sections[1].items.append("hoy")
+        
+        //Redondear foto
+        self.perfilImageView.layer.cornerRadius = self.perfilImageView.frame.size.width / 2
+        self.perfilImageView.clipsToBounds = true
+        self.perfilImageView.layer.borderWidth = 1.5
+        self.perfilImageView.layer.borderColor = UIColor.white.cgColor
 
     }
     

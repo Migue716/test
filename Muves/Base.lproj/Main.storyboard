@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -125,7 +125,7 @@
                                 <rect key="frame" x="80" y="36" width="322" height="553"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="palomita" translatesAutoresizingMaskIntoConstraints="NO" id="3pZ-zT-ePW">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mujer_foto" translatesAutoresizingMaskIntoConstraints="NO" id="3pZ-zT-ePW">
                                         <rect key="frame" x="111" y="15" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -2188,17 +2188,17 @@
         <image name="lluvia_sol" width="97" height="96"/>
         <image name="locacion" width="22" height="30"/>
         <image name="lupa" width="20" height="20"/>
-        <image name="palomita" width="72" height="72"/>
+        <image name="mujer_foto" width="150" height="150"/>
         <image name="twitter" width="29" height="24"/>
         <image name="yahoo" width="213" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="alX-P3-MxP"/>
-        <segue reference="1E1-zU-c43"/>
-        <segue reference="zfK-uP-Pyh"/>
-        <segue reference="PH6-oO-4ZQ"/>
+        <segue reference="Mkh-DF-zej"/>
         <segue reference="m4L-ES-UMj"/>
+        <segue reference="1E1-zU-c43"/>
+        <segue reference="alX-P3-MxP"/>
         <segue reference="0Km-JV-ifM"/>
-        <segue reference="37s-wV-Krf"/>
+        <segue reference="PH6-oO-4ZQ"/>
+        <segue reference="zfK-uP-Pyh"/>
     </inferredMetricsTieBreakers>
 </document>
